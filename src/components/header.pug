@@ -1,4 +1,19 @@
 mixin header()
     header.header 
         .header__nav.container 
-            p header
+            a(href="#!").header__logo 
+                <svg width="303" height="131" viewBox="0 0 303 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_4_24)">
+                    <path d="M252.049 0.344971L301.485 129.763H267.724L234.767 37.3216L201.608 129.763H167.646L217.082 0.344974L252.049 0.344971ZM154.204 0.344979V129.763H121.849V0.344982L154.204 0.344979ZM105.432 0.344984V16.8237L44.7416 104.04H102.417V129.763H2.33907V111.677L62.4261 25.264H1.1333L1.1333 0.344993L105.432 0.344984Z" fill="#3D3D3D"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_4_24">
+                    <rect width="303.01" height="130.31" fill="white" transform="translate(-0.00488281 0.344971)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            .header__list 
+                a(href="#!").header__link.active Главная
+                a(href="#!").header__link О НАС
+                a(href="#!").header__link Портфолио
+                a(href="#!").header__link Услуги

@@ -1,4 +1,10 @@
 // Тема по умолчанию
+
+:root{
+    --bg: #fff;
+    --text: #3D3D3D;
+    --gray: #C2C2C2;
+}
 *{
     margin: 0;
     padding: 0;
@@ -33,15 +39,58 @@ a{
 ul{
     list-style-type: none;
 }
-// delete this code
 body{
-    background: #000;
-    color: #fff;
-    @include media(992){
-        background: rgb(34, 34, 34);
+    background: var(--bg);
+    color: var(--text);
+}
+.container{
+    width: 100%;
+    @include res('padding-left', 75px);
+    @include res('padding-right', 75px);
+}
+.intro{
+    height: calc(100vh - 9.0625vw);
+    display: flex;
+    align-items: flex-end;
+    @include res('padding-bottom', 75px);
+    &__top{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        @include res('gap', 32px);
     }
-    main{
-        padding: 20px 0;
-        z-index: z(header);
+    &__title{
+        font-weight: 600;
+        text-transform: uppercase;
+        @include res('min-width', 1028px);
+        @include res('font-size', 150px);
+    }
+    &__right{
+        flex: 1 1 auto;
+        @include res('padding-top', 40px);
+    }
+    &__p{
+        font-weight: 600;
+        color: var(--gray);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        @include res('font-size', 18px);
+        &.pl{
+            @include res('margin-top', 18px);
+            @include res('padding-left', 70px);
+        }
+        div{
+            display: block;
+            @include res('width', 70px);
+        }
+        span{
+            &.w-100{
+                width: 100%;
+            }
+        }
+        &.active{
+            color: var(--text);
+        }
     }
 }
