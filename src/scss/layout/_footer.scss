@@ -1,1 +1,7 @@
-// Футер
+.footer{
+    min-height: 100vh;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}

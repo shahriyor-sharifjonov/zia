@@ -207,6 +207,16 @@
   color: var(--text);
 }
 
+.footer {
+  min-height: 100vh;
+}
+
+.footer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 :root {
   --bg: #fff;
   --text: #3D3D3D;
@@ -369,7 +379,8 @@ body {
 .render {
   width: 100%;
   line-height: 0;
-  height: auto;
+  overflow: hidden;
+  height: 28.3333333333vw;
 }
 
 .render picture {
@@ -379,7 +390,7 @@ body {
 
 .render img {
   width: 100%;
-  height: 100%;
+  height: 33.8541666667vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
